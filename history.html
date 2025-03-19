@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>History of Indian Astronomy</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <span class="menu-icon" onclick="toggleSidebar()">&#9776;</span>
+    <h1>History of Indian Astronomy</h1>
+  </header>
+
+  <div id="sidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="history.html">History</a>
+    <a href="famous_astronomers.html">Famous Astronomers</a>
+    <a href="contributions.html">Contributions</a>
+    <a href="library.html">Library</a>
+    <a href="maintainance.html">Simulation</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main>
+    <!-- <img src="images/history_banner.jpg" alt="History of Indian Astronomy" class="banner1" /> -->
+    <section>
+      <h2>An Ancient Legacy</h2>
+      <p>
+        Indian astronomy has roots that extend back thousands of years. Texts like the <em>Vedanga Jyotisha</em> showcase early astronomical practices and timekeeping.
+      </p>
+      <p>
+        Over centuries, scholars refined observations and mathematical calculations, laying the foundation for modern astronomy.
+      </p>
+      <p>
+        The history of Indian astronomy is a rich tapestry that spans thousands of years, 
+        marked by significant contributions from ancient scholars, 
+        the development of sophisticated astronomical instruments, 
+        and the integration of astronomy with cultural and religious practices. 
+      </p>
+      <p>
+        Indian astronomy has its roots in the Vedic period (approximately 1500–500 BCE) 
+        and has evolved through various phases, reflecting the intellectual and cultural advancements of the time.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Indian Astronomy. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleSidebar() {
+      var sidebar = document.getElementById("sidebar");
+      sidebar.style.left = (sidebar.style.left === "0px") ? "-250px" : "0px";
+    }
+  </script>
+</body>
+</html>

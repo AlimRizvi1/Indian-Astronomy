@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Library | Indian Astronomy</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Remove default link highlight and underline in this page */
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    a:focus,
+    a:active,
+    a:hover {
+      outline: none;
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <span class="menu-icon" onclick="toggleSidebar()">&#9776;</span>
+    <h1>Indian Astronomy Book Library</h1>
+  </header>
+
+  <!-- Sidebar navigation -->
+  <div id="sidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">&times;</a>
+    <!-- Add or update this list in all pages for consistent navigation -->
+    <a href="index.html">Home</a>
+    <a href="history.html">History</a>
+    <a href="famous_astronomers.html">Famous Astronomers</a>
+    <a href="contributions.html">Contributions</a>
+    <a href="library.html">Library</a>
+    <a href="maintainance.html">Simulation</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main>
+    <!-- <img src="images/library_banner.jpg" alt="Library Banner" class="banner" /> -->
+    <section>
+      <h2>Recommended Books on Indian Astronomy</h2>
+      <p>
+        Below is a selection of key texts, both historical and modern, that delve into various aspects of Indian astronomy.
+      </p>
+      
+      <!-- Book 1 -->
+      <a href="https://en.wikipedia.org/wiki/Surya_Siddhanta" target="_blank" rel="noopener noreferrer">
+      <article>
+        <img src="images/surya_siddhanta.jpg" alt="Surya Siddhanta Cover" class="astronomer-image" />
+        <h3>1. Surya Siddhanta</h3>
+        <p>
+          An ancient Sanskrit treatise on astronomy, the <em>Surya Siddhanta</em> is one of the earliest known texts detailing timekeeping, planetary motions, and eclipses.
+        </p>
+      </article>
+      </a>
+
+      <!-- Book 2 -->
+      <a href="https://en.wikipedia.org/wiki/Aryabhatiya" target="_blank" rel="noopener noreferrer">
+      <article>
+        <img src="images/aryabhatiya.jpg" alt="Aryabhatiya Cover" class="astronomer-image" />
+        <h3>2. Aryabhatiya</h3>
+        <p>
+          Written by Aryabhata, this seminal work discusses a range of topics in mathematics and astronomy, including place-value notation, trigonometry, and planetary models.
+        </p>
+      </article>
+      </a>
+
+      <!-- Book 3 -->
+      <a href="https://en.wikipedia.org/wiki/Brahmasphutasiddhanta" target="_blank" rel="noopener noreferrer">
+      <article>
+        <img src="images/brahma_sphuta_siddhanta.jpg" alt="Brahma Sphuta Siddhanta Cover" class="astronomer-image" />
+        <h3>3. Brahma Sphuta Siddhanta</h3>
+        <p>
+          Authored by Brahmagupta, it expanded on astronomical calculations, geometry, and introduced advanced concepts in algebra and zero.
+        </p>
+      </article>
+      </a>
+
+      <!-- Book 4 -->
+      <a href="https://en.wikipedia.org/wiki/Siddhanta_Shiromani" target="_blank" rel="noopener noreferrer">
+      <article>
+        <img src="images/siddhanta_shiromani.jpg" alt="Siddhanta Shiromani Cover" class="astronomer-image" />
+        <h3>4. Siddhanta Shiromani</h3>
+        <p>
+          Bhaskara II’s treatise is divided into four parts—Lilavati, Bijaganita, Ganitadhyaya, and Goladhyaya—covering arithmetic, algebra, and spherical astronomy.
+        </p>
+      </article>
+      </a>
+
+      <!-- Book 5 -->
+      <a href="https://en.wikipedia.org/wiki/Astronomy_in_India" target="_blank" rel="noopener noreferrer">
+      <article>
+        <img src="images/modern_astronomy.jpg" alt="Modern Astronomy Cover" class="astronomer-image" />
+        <h3>5. Modern Studies on Indian Astronomy</h3>
+        <p>
+          Various modern publications explore the historical evolution and global impact of Indian astronomical ideas, bridging ancient wisdom and contemporary science.
+        </p>
+      </article>
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Indian Astronomy. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript to toggle sidebar -->
+  <script>
+    function toggleSidebar() {
+      var sidebar = document.getElementById("sidebar");
+      sidebar.style.left = (sidebar.style.left === "0px") ? "-250px" : "0px";
+    }
+  </script>
+</body>
+</html>

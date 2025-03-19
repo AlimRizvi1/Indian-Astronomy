@@ -1,0 +1,215 @@
+/* ------------------------------
+   Night-Sky Cosmic Background
+   ------------------------------ */
+   body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    /* Use the cosmic image as the background */
+    background: #000 url("images/cosmos.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: #f1f1f1;
+  }
+  
+  /* ------------------------------
+     Header
+     ------------------------------ */
+  header {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  }
+  
+  /* Hamburger Menu Icon + Hover Animation */
+  .menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+  }
+  .menu-icon:hover {
+    transform: translateY(-50%) scale(1.1);
+  }
+  
+  /* ------------------------------
+     Sidebar Navigation
+     ------------------------------ */
+  .sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Initially hidden */
+    background: rgba(20, 20, 20, 0.95);
+    overflow-x: hidden;
+    transition: left 0.5s ease;
+    padding-top: 60px;
+  }
+  .sidebar a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #f1f1f1;
+    display: block;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  .sidebar a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(5px);
+  }
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 36px;
+    color: #fff;
+  }
+  
+  /* ------------------------------
+     Main Content Area
+     ------------------------------ */
+  main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 2rem auto;
+    /* Semi-transparent dark background for readability */
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  }
+  
+  /* ------------------------------
+     Banner Image
+     ------------------------------ */
+  .banner {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    /* Fade-in animation for banner images */
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  .banner1 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    /* Fade-in animation for banner images */
+    animation: fadeIn 0.5s ease-in-out;
+    align-items: center;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  /* ------------------------------
+     Astronomer Images + Hover
+     ------------------------------ */
+  .astronomer-image {
+    max-width: 150px;
+    height: auto;
+    margin-right: 1rem;
+    float: left;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+  }
+  .astronomer-image:hover {
+    transform: scale(1.05);
+  }
+  
+  /* ------------------------------
+     Articles Hover Effect
+     ------------------------------ */
+  article {
+    overflow: auto;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  article:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  /* ------------------------------
+     Footer
+     ------------------------------ */
+  footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.5);
+  }
+  
+  /* ------------------------------
+     Responsive Adjustments
+     ------------------------------ */
+  @media (max-width: 768px) {
+    main {
+      margin: 2rem 1rem;
+      padding: 1rem;
+    }
+    .astronomer-image {
+      max-width: 100px;
+    }
+  }
+
+
+  /* Center the contact form container and align its content */
+.form-container {
+    max-width: 600px;      /* Maximum width for readability */
+    margin: 0 auto;        /* Center the container horizontally */
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;    /* Aligns text and inline elements to center */
+  }
+  
+  /* Optional: Style the form elements for a consistent look */
+  .form-container form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .form-container form input[type="text"],
+  .form-container form input[type="email"],
+  .form-container form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .form-container form input[type="submit"] {
+    padding: 0.7rem 2rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #00695c;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .form-container form input[type="submit"]:hover {
+    background-color: #00897b;
+  }
+  
+  
+  

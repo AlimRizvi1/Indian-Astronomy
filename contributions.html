@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contributions to Astronomy</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <span class="menu-icon" onclick="toggleSidebar()">&#9776;</span>
+    <h1>Contributions of Indian Astronomy</h1>
+  </header>
+
+  <div id="sidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="history.html">History</a>
+    <a href="famous_astronomers.html">Famous Astronomers</a>
+    <a href="contributions.html">Contributions</a>
+    <a href="library.html">Library</a>
+    <a href="maintainance.html">Simulation</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main>
+    <!-- <img src="images/contributions_banner.jpg" alt="Contributions Banner" class="banner" /> -->
+    <section>
+      <h2>Major Contributions</h2>
+      <p>Indian astronomers have influenced global understanding of the cosmos through:</p>
+      <ul>
+        <li>Development of astronomical instruments</li>
+        <li>Innovative mathematical techniques for calculations</li>
+        <li>Advanced timekeeping and calendar systems</li>
+        <li>Early models of planetary motion</li>
+      </ul>
+      <p>
+        These achievements enriched astronomy and paved the way for future scientific discoveries.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Indian Astronomy. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleSidebar() {
+      var sidebar = document.getElementById("sidebar");
+      sidebar.style.left = (sidebar.style.left === "0px") ? "-250px" : "0px";
+    }
+  </script>
+</body>
+</html>

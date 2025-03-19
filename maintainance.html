@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Under Maintenance | Indian Astronomy</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <span class="menu-icon" onclick="toggleSidebar()">&#9776;</span>
+    <h1>Page Under Maintenance</h1>
+  </header>
+
+  <!-- Sidebar navigation -->
+  <div id="sidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="history.html">History</a>
+    <a href="famous_astronomers.html">Famous Astronomers</a>
+    <a href="contributions.html">Contributions</a>
+    <a href="library.html">Library</a>
+    <a href="maintainance.html">Simulation</a>
+    <a href="contact.html">Contact</a>
+    <!-- You can link to maintenance.html here if desired, 
+         but typically a maintenance page isn't in the main nav. -->
+  </div>
+
+  <main>
+    <!-- Optional banner or placeholder image -->
+    <!-- <img src="images/maintenance_banner.jpg" alt="Maintenance Banner" class="banner" /> -->
+    <section>
+      <h2>We're Working On It!</h2>
+      <p>
+        This page is currently under maintenance. We’re making improvements to enhance your experience.
+        Please check back soon or explore other sections of our website in the meantime.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Indian Astronomy. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleSidebar() {
+      var sidebar = document.getElementById("sidebar");
+      sidebar.style.left = (sidebar.style.left === "0px") ? "-250px" : "0px";
+    }
+  </script>
+</body>
+</html>

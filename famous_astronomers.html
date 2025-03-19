@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Famous Indian Astronomers</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Remove default link highlight and underline in this page */
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    a:focus,
+    a:active,
+    a:hover {
+      outline: none;
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <span class="menu-icon" onclick="toggleSidebar()">&#9776;</span>
+    <h1>Famous Indian Astronomers</h1>
+  </header>
+
+  <div id="sidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="history.html">History</a>
+    <a href="famous_astronomers.html">Famous Astronomers</a>
+    <a href="contributions.html">Contributions</a>
+    <a href="library.html">Library</a>
+    <a href="maintainance.html">Simulation</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main>
+    <section>
+      <h2>Notable Figures</h2>
+      <a href="https://en.wikipedia.org/wiki/Aryabhata" target="_blank" rel="noopener noreferrer">
+      <article>
+        <img src="images/aryabhata.png" alt="Aryabhata" class="astronomer-image" />
+        <h3>Aryabhata (476–550 CE)</h3>
+        <p>
+          Aryabhata is known for his significant contributions to mathematics and astronomy, including accurate calculations of the Earth's circumference and solar system dynamics.
+        </p>
+      </article>
+      </a>
+      <a href="https://en.wikipedia.org/wiki/Var%C4%81hamihira" target="_blank" rel="noopener noreferrer">
+      <article>
+        <img src="images/varahamihira.png" alt="Varahamihira" class="astronomer-image" />
+        <h3>Varahamihira (505–587 CE)</h3>
+        <p>
+          Varahamihira made remarkable advances in astrology and astronomy, with works that influenced scientific thought for centuries.
+        </p>
+      </article>
+      </a>
+      <a href="https://en.wikipedia.org/wiki/Bh%C4%81skara_II" target="_blank" rel="noopener noreferrer">
+      <article>
+        <img src="images/bhaskara_ii.png" alt="Bhaskara II" class="astronomer-image" />
+        <h3>Bhaskara II (1114–1185 CE)</h3>
+        <p>
+          Recognized for his comprehensive treatise <em>Siddhanta Shiromani</em>, Bhaskara II made lasting contributions to astronomical observations and mathematical techniques.
+        </p>
+      </article>
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Indian Astronomy. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleSidebar() {
+      var sidebar = document.getElementById("sidebar");
+      sidebar.style.left = (sidebar.style.left === "0px") ? "-250px" : "0px";
+    }
+  </script>
+</body>
+</html>
